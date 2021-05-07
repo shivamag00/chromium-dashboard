@@ -22,17 +22,11 @@ import flask
 from google.appengine.api import users as gae_users
 from framework import users
 from internals import models
-from settings import UNIT_TEST_MODE
-import os
 
 def can_admin_site(user):
   """Return True if the current user is allowed to administer the site."""
   # A user is an admin if they are an admin of the GAE project.
   # TODO(jrobbins): delete this statement after legacy admins moved to AppUser.
-  if UNIT_TEST_MODE:
-    return (os.environ.get('USER_IS_ADMIN', '0')) == '1'
-
-
   if gae_users.is_current_user_admin():
     return True
 

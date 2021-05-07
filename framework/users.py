@@ -1,9 +1,7 @@
-
+import sys
 from flask import session
 from google.oauth2 import id_token
 from google.auth.transport import requests
-import os
-from settings import UNIT_TEST_MODE
 
 class User(object):
     """Provides the email address, nickname, and ID for a user.
@@ -179,13 +177,6 @@ class User(object):
 
 
 def get_current_user():
-
-    if UNIT_TEST_MODE:
-        if os.environ['USER_EMAIL']!= '':
-            current_user = User(email=os.environ['USER_EMAIL'], _user_id=os.environ['USER_ID'])
-        else:
-            current_user = None
-        return current_user
 
     token = session.get('id_token')
     current_user = None
