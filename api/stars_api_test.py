@@ -97,6 +97,7 @@ class StarsAPITest(unittest.TestCase):
     with register.app.test_request_context(self.request_path, json=params):
       with self.assertRaises(werkzeug.exceptions.Forbidden):
         self.handler.do_post()
+    
 
   def test_post__duplicate(self):
     """User sends a duplicate request, which should be a no-op."""
