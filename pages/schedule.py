@@ -105,7 +105,14 @@ class ScheduleHandler(basehandlers.FlaskHandler):
     }
     return template_data
 
+class NewScheduleHandler(basehandlers.FlaskHandler):
+
+  TEMPLATE_PATH = 'schedule_new.html'
+
+  def get_template_data(self):
+    return {}
 
 app = basehandlers.FlaskApplication([
   ('/features/schedule', ScheduleHandler),
+  ('/features/schedule/new', NewScheduleHandler),
 ], debug=settings.DEBUG)

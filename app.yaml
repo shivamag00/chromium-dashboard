@@ -81,6 +81,10 @@ handlers:
   script: pages.schedule.app
   secure: always
 
+- url: /features/schedule/new
+  script: pages.schedule.app
+  secure: always
+
 - url: /features.*
   script: pages.featurelist.app
   secure: always
