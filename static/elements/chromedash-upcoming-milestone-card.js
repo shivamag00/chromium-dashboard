@@ -8,7 +8,7 @@ class ChromedashUpcomingMilestoneCard extends LitElement {
     return {
       // Assigned in schedule-apge.js, value from Django
       showShippingType: {type: Boolean},
-      starredFeatures: {type: Array},
+      starredFeatures: {type: Object},
       templateContent: {type: Object},
       channel: {type: Object},
       showDates: {type: Boolean},
@@ -56,7 +56,7 @@ class ChromedashUpcomingMilestoneCard extends LitElement {
 
     const iconEl = e.target;
     const featureId = Number(iconEl.dataset.featureId);
-    const newStarred = !this.starredFeatures.includes(featureId);
+    const newStarred = !this.starredFeatures.has(featureId);
 
     this._fireEvent('star-toggle-event', {
       feature: featureId,
@@ -89,7 +89,7 @@ class ChromedashUpcomingMilestoneCard extends LitElement {
         <h1 class="channel_label">${this.templateContent.channelLabel}</h1>
         <h1 class="chrome_version layout horizontal center ${this.templateContent.h1Class}">
         <span class="chrome-logo"></span>
-        <a href="${this.templateContent.downloadUrl}" title="${this.templateContent.downloadTitle}"
+        <a href="${this.templateContent.downloadUrl}" title="${this.templateContent.downloadTitle}" rel="noopener"
           target="_blank">Chrome ${this.channel.version}</a>
         </h1>
       </div>
@@ -139,7 +139,7 @@ class ChromedashUpcomingMilestoneCard extends LitElement {
         <span class="tooltip"
           title="Receive an email notification when there are updates">
           <iron-icon
-            icon="${this.starredFeatures.includes(Number(f.id)) ?
+            icon="${this.starredFeatures.has(Number(f.id)) ?
             'chromestatus:star' :
             'chromestatus:star-border'}"
             class="pushicon"
@@ -150,7 +150,7 @@ class ChromedashUpcomingMilestoneCard extends LitElement {
         ` : html`
         <span class="tooltip"
           title="Sign in to get email notifications for updates">
-          <a href="#"  @click="${window.promptSignIn}" data-tooltip>
+          <a href="#"  @click="${window.promptSignIn}" data-tooltip aria-label="Star this feature">
             <iron-icon icon="chromestatus:star-border"
               class="pushicon">
             </iron-icon>

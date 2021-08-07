@@ -80,14 +80,13 @@ class ChromedashUpcoming extends LitElement {
   computeWidthofCard() {
     let cardContainer = document.querySelector('#releases-section');
     let containerWidth = cardContainer.offsetWidth;
-    let items = this.computeItems(containerWidth);
+    let items = this.computeItems();
     let margin=16;
     let val = (containerWidth/items)-margin;
     return val;
   };
 
-  computeItems(width) {
-    console.log(width);
+  computeItems() {
     if (window.matchMedia('(max-width: 768px)').matches) {
       return 1;
     } else if (window.matchMedia('(max-width: 992px)').matches) {
@@ -111,7 +110,7 @@ class ChromedashUpcoming extends LitElement {
           ?showdates=${SHOW_DATES}
           .removedStatus=${REMOVED_STATUS}
           .deprecatedStatus=${DEPRECATED_STATUS}
-          .starredFeatures=${[...this.starredFeatures]}
+          .starredFeatures=${this.starredFeatures}
           .cardWidth=${this.cardWidth}
           ?signedin=${this.signedIn}
           ?showShippingType=${this.showShippingType}
