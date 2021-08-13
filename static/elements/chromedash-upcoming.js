@@ -115,8 +115,7 @@ class ChromedashUpcoming extends LitElement {
     // add some details to milestone information fetched
     milestoneNumsArray.forEach((milestoneNum) => {
       newMilestonesInfo[milestoneNum].version = milestoneNum;
-      newMilestonesInfo[milestoneNum].features =
-          this.mapFeaturesToShippingType(milestoneFeatures[milestoneNum]);
+      newMilestonesInfo[milestoneNum].features = milestoneFeatures[milestoneNum];
     });
 
     // update the properties to render the latest milestone cards

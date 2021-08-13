@@ -1,0 +1,105 @@
+diff --git a/static/elements/chromedash-upcoming-milestone-card.js b/static/elements/chromedash-upcoming-milestone-card.js
+index f4325bf..e32bf97 100644
+--- a/static/elements/chromedash-upcoming-milestone-card.js
++++ b/static/elements/chromedash-upcoming-milestone-card.js
+@@ -9,6 +9,7 @@ class ChromedashUpcomingMilestoneCard extends LitElement {
+       // Assigned in schedule-apge.js, value from Django
+       showShippingType: {type: Boolean},
+       starredFeatures: {type: Object},
++      highlightFeature: {type: Number},
+       templateContent: {type: Object},
+       channel: {type: Object},
+       showDates: {type: Boolean},
+@@ -69,6 +70,18 @@ class ChromedashUpcomingMilestoneCard extends LitElement {
+     });
+   }
+ 
++  highlight(e) {
++    e.preventDefault();
++    e.stopPropagation();
++
++    const iconEl = e.target.parentNode;
++    const featureId = Number(iconEl.dataset.featureId);
++
++    this._fireEvent('highlight-feature-event', {
++      feature: featureId,
++    });
++  }
++
+   _computeDaysUntil(dateStr) {
+     const today = new Date();
+     const diff = this._dateDiffInDays(new Date(dateStr), today);
+@@ -118,7 +131,7 @@ class ChromedashUpcomingMilestoneCard extends LitElement {
+   _cardFeatureItemTemplate(f) {
+     return html `
+     <li data-feature-id="${f.id}">
+-      <a href="/feature/${f.id}">${f.name}</a>
++      <a href="/feature/${f.id}" @mouseenter="${this.highlight}" class="${f.id == this.highlightFeature ? 'highlight' : ''}">${f.name}</a>
+       <span class="icon_row">
+         ${f.browsers.chrome.origintrial ? html`
+         <span class="tooltip" title="Origin Trial">
+diff --git a/static/elements/chromedash-upcoming.js b/static/elements/chromedash-upcoming.js
+index ddb634b..e9fedb3 100644
+--- a/static/elements/chromedash-upcoming.js
++++ b/static/elements/chromedash-upcoming.js
+@@ -57,6 +57,7 @@ class ChromedashUpcoming extends LitElement {
+       milestoneArray: {type: Array},
+       milestoneInfo: {type: Object},
+       cardsToFetchInAdvance: {type: Number},
++      highlightFeature: {type: Number},
+     };
+   }
+ 
+@@ -175,6 +176,10 @@ class ChromedashUpcoming extends LitElement {
+       });
+   }
+ 
++  handleHighlightEvent(e) {
++    this.highlightFeature = e.detail.feature;
++  }
++
+   computeWidthofCard() {
+     let cardContainer = document.querySelector('#releases-section');
+     let containerWidth = cardContainer.offsetWidth;
+@@ -210,9 +215,11 @@ class ChromedashUpcoming extends LitElement {
+           .deprecatedStatus=${DEPRECATED_STATUS}
+           .starredFeatures=${this.starredFeatures}
+           .cardWidth=${this.cardWidth}
++          .highlightFeature=${this.highlightFeature}
+           ?signedin=${this.signedIn}
+           ?showShippingType=${this.showShippingType}
+           @star-toggle-event=${this.handleStarToggle}
++          @highlight-feature-event=${this.handleHighlightEvent}
+         >
+         </chromedash-upcoming-milestone-card>        
+       `)}
+@@ -226,9 +233,11 @@ class ChromedashUpcoming extends LitElement {
+           .deprecatedStatus=${DEPRECATED_STATUS}
+           .starredFeatures=${this.starredFeatures}
+           .cardWidth=${this.cardWidth}
++          .highlightFeature=${this.highlightFeature}
+           ?signedin=${this.signedIn}
+           ?showShippingType=${this.showShippingType}
+           @star-toggle-event=${this.handleStarToggle}
++          @highlight-feature-event=${this.handleHighlightEvent}
+         >
+         </chromedash-upcoming-milestone-card>        
+       `)}
+diff --git a/static/sass/elements/chromedash-upcoming-milestone-card.scss b/static/sass/elements/chromedash-upcoming-milestone-card.scss
+index 41d0670..1a76604 100644
+--- a/static/sass/elements/chromedash-upcoming-milestone-card.scss
++++ b/static/sass/elements/chromedash-upcoming-milestone-card.scss
+@@ -158,3 +158,13 @@ iron-icon {
+   overflow: hidden;
+   text-overflow: ellipsis;
+ }
++
++.highlight {
++  font-weight: bold;
++  font-size: large;
++  color: orangered;
++}
++
++li a:hover {
++  color: orangered;
++}

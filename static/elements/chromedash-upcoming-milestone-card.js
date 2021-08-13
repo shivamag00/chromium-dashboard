@@ -16,12 +16,14 @@ class ChromedashUpcomingMilestoneCard extends LitElement {
       deprecatedStatus: {type: Array},
       signedIn: {type: Boolean},
       cardWidth: {type: Number},
+      noFeatureString: {type: String},
     };
   }
 
   constructor() {
     super();
     this.starredFeatures = new Set();
+    this.noFeatureString = 'NO FEATURE HAS BEEN PLANNED IN THIS RELEASE YET';
   }
 
   /**
@@ -86,6 +88,16 @@ class ChromedashUpcomingMilestoneCard extends LitElement {
       return [];
     }
     return Object.keys(obj).sort();
+  }
+
+  _isAnyFeatureReleased() {
+    for (const shippingType of this._objKeys(this.channel.features)) {
+      if (this.channel.features[shippingType].length != 0) {
+        return true;
+      }
+    }
+
+    return false;
   }
 
   _cardHeaderTemplate() {
@@ -171,20 +183,21 @@ class ChromedashUpcomingMilestoneCard extends LitElement {
   _cardFeatureListTemplate() {
     return html `
       <div class="features_list">
-        <div class="features_header">${this.templateContent.featureHeader}:</div>
-
-          ${this._objKeys(this.channel.features).map((shippingType) => html`
+      ${this._isAnyFeatureReleased() ? html `
+      <div class="features_header">${this.templateContent.featureHeader}:</div>
+          ${this._objKeys(this.channel.features).map((shippingType) => this.channel.features[shippingType] != 0 ? html`
           <h3 class="feature_shipping_type">${shippingType}</h3>
           <ul>
             ${this.channel.features[shippingType].map((f) => html`
               ${this._cardFeatureItemTemplate(f)}
             `)}
           </ul>
-        `)}
-      </div>
+        ` : nothing)}
+      </div>` : html `
+      <div class="features_header no_feature_released">${this.noFeatureString}</div>
+      `}
     `;
   }
-
 
   _widthStyle() {
     return html`
