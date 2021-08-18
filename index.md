@@ -1,6 +1,6 @@
 ## About WebStatus
 
-ChromeStatus.com is a web application that tracks the set of features in the Chrome browser and other popular browsers. It is also the first level of communication between Chromium Developers and the Web Development Community.
+[ChromeStatus.com](https://www.chromestatus.com) is a web application that tracks the set of features in the Chrome browser and other popular browsers. It is also the first level of communication between Chromium Developers and the Web Development Community.
 
 ### Markdown
 
