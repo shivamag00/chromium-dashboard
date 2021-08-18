@@ -10,11 +10,23 @@ This project aimed at making the following modifications to WebStatus:-
 
 ## Pull Requests Raised
 ### Related to migrating from Python 2 to Python 3
-1. [#1205](https://github.com/GoogleChrome/chromium-dashboard/pull/1205) - Migrated URLFetch to Native Python Requests 
-2. [#1275](https://github.com/GoogleChrome/chromium-dashboard/pull/1275) - Migrated GAE Users to Google Sign-In
-3. [#1352](https://github.com/GoogleChrome/chromium-dashboard/pull/1352) - Migrated GAE DB Client Library to GAE NDB Library
-4. [#1364](https://github.com/GoogleChrome/chromium-dashboard/pull/1364) - Follow-up to GAE NDB Migration
-5. [#1365](https://github.com/GoogleChrome/chromium-dashboard/pull/1365) - Migrated GAE NDB to Cloud NDB
+* [#1205](https://github.com/GoogleChrome/chromium-dashboard/pull/1205) - Migrated URLFetch to Native Python Requests 
+* [#1275](https://github.com/GoogleChrome/chromium-dashboard/pull/1275) - Migrated GAE Users to Google Sign-In
+* [#1352](https://github.com/GoogleChrome/chromium-dashboard/pull/1352) - Migrated GAE DB Client Library to GAE NDB Library
+* [#1364](https://github.com/GoogleChrome/chromium-dashboard/pull/1364) - Follow-up to GAE NDB Migration
+* [#1365](https://github.com/GoogleChrome/chromium-dashboard/pull/1365) - Migrated GAE NDB to Cloud NDB
+
+### Related to roadmap view
+* [#1399](https://github.com/GoogleChrome/chromium-dashboard/pull/1399) - Added Features API
+* [#1400](https://github.com/GoogleChrome/chromium-dashboard/pull/1400) - Added Channels API
+* [#1424](https://github.com/GoogleChrome/chromium-dashboard/pull/1424) - Added Endpoint in Features API to query only a single milestone
+* [#1426](https://github.com/GoogleChrome/chromium-dashboard/pull/1426) - Created Skeleton for New Upcoming Page
+* [#1432](https://github.com/GoogleChrome/chromium-dashboard/pull/1432) - Added Redux Inspired Web Components to the New Upcoming Page
+* [#1451](https://github.com/GoogleChrome/chromium-dashboard/pull/1451) - Added Scroll Behaviour on upcoming page
+* [#1455](https://github.com/GoogleChrome/chromium-dashboard/pull/1455) - Added Support for scrolling on narrow view ports
+* [#1457](https://github.com/GoogleChrome/chromium-dashboard/pull/1457) - Modified the features API to include the same feature in multiple milestones based on its stage in its lifecycle
+* [#1458](https://github.com/GoogleChrome/chromium-dashboard/pull/1458) - Added Infinite Scrolling Support to view fututre milestones
+* [#1464](https://github.com/GoogleChrome/chromium-dashboard/pull/1464) - Map Feature to shipping type on the backend instead of on frontend.
 
 ```markdown
 Syntax highlighted code block
