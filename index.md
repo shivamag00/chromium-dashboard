@@ -2,9 +2,11 @@
 
 [ChromeStatus.com](https://www.chromestatus.com) is a web application that tracks the set of features in the Chrome browser and other popular browsers. It is also the first level of communication between Chromium Developers and the Web Development Community.
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Project Description
+This project aimed at making the following modifications to WebStatus:-
+1. Make changes that are steps towards upgrading the app from Python 2 to Python 3.
+2. Design and implement a roadmap view for upcoming and past milestones.
+3. Improve the project quality by fixing defects and improving test coverage.
 
 ```markdown
 Syntax highlighted code block
