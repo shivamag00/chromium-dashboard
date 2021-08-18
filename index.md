@@ -1,8 +1,6 @@
-## Welcome to GitHub Pages
+## About WebStatus
 
-You can use the [editor on GitHub](https://github.com/shivamag00/chromium-dashboard/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+ChromeStatus.com is a web application that tracks the set of features in the Chrome browser and other popular browsers. It is also the first level of communication between Chromium Developers and the Web Development Community.
 
 ### Markdown
 
