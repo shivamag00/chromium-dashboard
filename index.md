@@ -8,6 +8,14 @@ This project aimed at making the following modifications to WebStatus:-
 2. Design and implement a roadmap view for upcoming and past milestones.
 3. Improve the project quality by fixing defects and improving test coverage.
 
+## Pull Requests Raised
+### Related to migrating from Python 2 to Python 3
+1. [#1205](https://github.com/GoogleChrome/chromium-dashboard/pull/1205) - Migrated URLFetch to Native Python Requests 
+2. [#1275](https://github.com/GoogleChrome/chromium-dashboard/pull/1275) - Migrated GAE Users to Google Sign-In
+3. [#1352](https://github.com/GoogleChrome/chromium-dashboard/pull/1352) - Migrated GAE DB Client Library to GAE NDB Library
+4. [#1364](https://github.com/GoogleChrome/chromium-dashboard/pull/1364) - Follow-up to GAE NDB Migration
+5. [#1365](https://github.com/GoogleChrome/chromium-dashboard/pull/1365) - Migrated GAE NDB to Cloud NDB
+
 ```markdown
 Syntax highlighted code block
 
