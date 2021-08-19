@@ -31,18 +31,20 @@ This project aimed at making the following modifications to WebStatus:-
 * [#1467](https://github.com/GoogleChrome/chromium-dashboard/pull/1467) - Added Aria-label attributes
 * [#1468](https://github.com/GoogleChrome/chromium-dashboard/pull/1468) - Added support for infinite scrolling to previous releases
 
-```markdown
-Syntax highlighted code block
+### Related to bug fixing and improving usability
+* [#1211](https://github.com/GoogleChrome/chromium-dashboard/pull/1211) - Fixed failing tests in Travis CI
+* [#1220](https://github.com/GoogleChrome/chromium-dashboard/pull/1220), [#1256](https://github.com/GoogleChrome/chromium-dashboard/pull/1256) - Added responsive design to _stack rank_ & _timeline_ view links
+* [#1212](https://github.com/GoogleChrome/chromium-dashboard/pull/1212) - Fixed failing command `npm run coverage`
+* [#1244](https://github.com/GoogleChrome/chromium-dashboard/pull/1244) - Made "additional fields by process phase" widget keyboard accessible
+* [#1248](https://github.com/GoogleChrome/chromium-dashboard/pull/1248) - Fixed bug: "Edit feature complains about multiple emails"
+* [#1311](https://github.com/GoogleChrome/chromium-dashboard/pull/1311) [#1399](https://github.com/GoogleChrome/chromium-dashboard/pull/1339) [#1383](https://github.com/GoogleChrome/chromium-dashboard/pull/1383) - Updated Developer Documentation with architecture details
+* [#1325](https://github.com/GoogleChrome/chromium-dashboard/pull/1325) - Replaced Left Hand Navigation with a dropdown menu 
+* [#1334](https://github.com/GoogleChrome/chromium-dashboard/pull/1334) - Added the dropdown in narrow viewports
+* [#1340](https://github.com/GoogleChrome/chromium-dashboard/pull/1340) - Page title on 'edit feature' page will display the feature name
+* [#1346](https://github.com/GoogleChrome/chromium-dashboard/pull/1346) - Made drawer column responsive
+* [#1376](https://github.com/GoogleChrome/chromium-dashboard/pull/1376) - Some UI enhancements
+* [#1436](https://github.com/GoogleChrome/chromium-dashboard/pull/1436) - Fixed bug: Star would toggle in UI but not at the backend
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
 
 **Bold** and _Italic_ and `Code` text
 
