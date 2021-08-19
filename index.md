@@ -44,19 +44,3 @@ This project aimed at making the following modifications to WebStatus:-
 * [#1376](https://github.com/GoogleChrome/chromium-dashboard/pull/1376) - Some UI enhancements
 * [#1436](https://github.com/GoogleChrome/chromium-dashboard/pull/1436) - Fixed bug: Star would toggle in UI but not at the backend
 * [#1244](https://github.com/GoogleChrome/chromium-dashboard/pull/1244) - "additional fields by process phase" widget is keyboard accessible
-
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/shivamag00/chromium-dashboard/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
