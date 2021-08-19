@@ -24,7 +24,7 @@ This project aimed at making the following modifications to WebStatus:-
 * [#1432](https://github.com/GoogleChrome/chromium-dashboard/pull/1432) - Added Redux Inspired Web Components
 * [#1451](https://github.com/GoogleChrome/chromium-dashboard/pull/1451) - Added Scroll Behaviour on upcoming page
 * [#1455](https://github.com/GoogleChrome/chromium-dashboard/pull/1455) - Added Support for scrolling on narrow view ports
-* [#1457](https://github.com/GoogleChrome/chromium-dashboard/pull/1457) - Modified the features API to include the same feature in multiple releases
+* [#1457](https://github.com/GoogleChrome/chromium-dashboard/pull/1457) - Modified the features API to use OT & DT fields of feature
 * [#1458](https://github.com/GoogleChrome/chromium-dashboard/pull/1458) - Added Infinite Scrolling Support to view fututre milestones
 * [#1464](https://github.com/GoogleChrome/chromium-dashboard/pull/1464) - Map Feature to shipping type on the backend.
 * [#1462](https://github.com/GoogleChrome/chromium-dashboard/pull/1462) - Added support for highlighting on hovering over a feature
