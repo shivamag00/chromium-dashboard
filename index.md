@@ -2,7 +2,8 @@
 
 [ChromeStatus.com](https://www.chromestatus.com) is a web application that tracks the set of features in the Chrome browser and other popular browsers. It is also the first level of communication between Chromium Developers and the Web Development Community.
 
-Source code of WebStatus is hosted on GitHub in [this](https://github.com/GoogleChrome/chromium-dashboard) repository.
+Source code of WebStatus is hosted on GitHub in the following repository:-
+- [GoogleChrome/chromium-dashboard](https://github.com/GoogleChrome/chromium-dashboard)
 
 ## GSoC Project Description
 This project aimed at making the following modifications to WebStatus:-
