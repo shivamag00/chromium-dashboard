@@ -47,3 +47,6 @@ This project aimed at making the following modifications to WebStatus:-
 * [#1376](https://github.com/GoogleChrome/chromium-dashboard/pull/1376) - Some UI enhancements
 * [#1436](https://github.com/GoogleChrome/chromium-dashboard/pull/1436) - Fixed bug: Star would toggle in UI but not at the backend
 * [#1244](https://github.com/GoogleChrome/chromium-dashboard/pull/1244) - "additional fields by process phase" widget is keyboard accessible
+
+
+All the above-mentioned PRs were merged into the main branch and all the goals of the project were met. 
