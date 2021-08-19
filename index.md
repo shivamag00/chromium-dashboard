@@ -19,14 +19,14 @@ This project aimed at making the following modifications to WebStatus:-
 ### Related to roadmap view
 * [#1399](https://github.com/GoogleChrome/chromium-dashboard/pull/1399) - Added Features API
 * [#1400](https://github.com/GoogleChrome/chromium-dashboard/pull/1400) - Added Channels API
-* [#1424](https://github.com/GoogleChrome/chromium-dashboard/pull/1424) - Added Endpoint in Features API to query only a single milestone
+* [#1424](https://github.com/GoogleChrome/chromium-dashboard/pull/1424) - Added Endpoint in Features API to query only a milestone
 * [#1426](https://github.com/GoogleChrome/chromium-dashboard/pull/1426) - Created Skeleton for New Upcoming Page
-* [#1432](https://github.com/GoogleChrome/chromium-dashboard/pull/1432) - Added Redux Inspired Web Components to the New Upcoming Page
+* [#1432](https://github.com/GoogleChrome/chromium-dashboard/pull/1432) - Added Redux Inspired Web Components
 * [#1451](https://github.com/GoogleChrome/chromium-dashboard/pull/1451) - Added Scroll Behaviour on upcoming page
 * [#1455](https://github.com/GoogleChrome/chromium-dashboard/pull/1455) - Added Support for scrolling on narrow view ports
-* [#1457](https://github.com/GoogleChrome/chromium-dashboard/pull/1457) - Modified the features API to include the same feature in multiple milestones based on its stage in its lifecycle
+* [#1457](https://github.com/GoogleChrome/chromium-dashboard/pull/1457) - Modified the features API to include the same feature in multiple releases
 * [#1458](https://github.com/GoogleChrome/chromium-dashboard/pull/1458) - Added Infinite Scrolling Support to view fututre milestones
-* [#1464](https://github.com/GoogleChrome/chromium-dashboard/pull/1464) - Map Feature to shipping type on the backend instead of on frontend.
+* [#1464](https://github.com/GoogleChrome/chromium-dashboard/pull/1464) - Map Feature to shipping type on the backend.
 * [#1462](https://github.com/GoogleChrome/chromium-dashboard/pull/1462) - Added support for highlighting on hovering over a feature
 * [#1467](https://github.com/GoogleChrome/chromium-dashboard/pull/1467) - Added Aria-label attributes
 * [#1468](https://github.com/GoogleChrome/chromium-dashboard/pull/1468) - Added support for infinite scrolling to previous releases
