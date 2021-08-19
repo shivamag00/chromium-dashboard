@@ -27,6 +27,9 @@ This project aimed at making the following modifications to WebStatus:-
 * [#1457](https://github.com/GoogleChrome/chromium-dashboard/pull/1457) - Modified the features API to include the same feature in multiple milestones based on its stage in its lifecycle
 * [#1458](https://github.com/GoogleChrome/chromium-dashboard/pull/1458) - Added Infinite Scrolling Support to view fututre milestones
 * [#1464](https://github.com/GoogleChrome/chromium-dashboard/pull/1464) - Map Feature to shipping type on the backend instead of on frontend.
+* [#1462](https://github.com/GoogleChrome/chromium-dashboard/pull/1462) - Added support for highlighting on hovering over a feature
+* [#1467](https://github.com/GoogleChrome/chromium-dashboard/pull/1467) - Added Aria-label attributes
+* [#1468](https://github.com/GoogleChrome/chromium-dashboard/pull/1468) - Added support for infinite scrolling to previous releases
 
 ```markdown
 Syntax highlighted code block
