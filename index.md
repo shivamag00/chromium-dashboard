@@ -33,9 +33,8 @@ This project aimed at making the following modifications to WebStatus:-
 
 ### Related to fixing bugs and improving usability
 * [#1211](https://github.com/GoogleChrome/chromium-dashboard/pull/1211) - Fixed failing tests in Travis CI
-* [#1220](https://github.com/GoogleChrome/chromium-dashboard/pull/1220), [#1256](https://github.com/GoogleChrome/chromium-dashboard/pull/1256) - Added responsiveness to _stack rank_ & _timeline_ view links
+* [#1220](https://github.com/GoogleChrome/chromium-dashboard/pull/1220), [#1256](https://github.com/GoogleChrome/chromium-dashboard/pull/1256) - _stack rank_ & _timeline_ links are viewport responsive
 * [#1212](https://github.com/GoogleChrome/chromium-dashboard/pull/1212) - Generation of coverage report no longer fails
-* [#1244](https://github.com/GoogleChrome/chromium-dashboard/pull/1244) - "additional fields by process phase" widget is keyboard accessible
 * [#1248](https://github.com/GoogleChrome/chromium-dashboard/pull/1248) - Fixed bug: "Edit feature complains about multiple emails"
 * [#1311](https://github.com/GoogleChrome/chromium-dashboard/pull/1311) [#1399](https://github.com/GoogleChrome/chromium-dashboard/pull/1339) [#1383](https://github.com/GoogleChrome/chromium-dashboard/pull/1383) - Updated Developer Documentation
 * [#1325](https://github.com/GoogleChrome/chromium-dashboard/pull/1325) - Replaced Left Hand Navigation with a dropdown menu 
@@ -44,6 +43,7 @@ This project aimed at making the following modifications to WebStatus:-
 * [#1346](https://github.com/GoogleChrome/chromium-dashboard/pull/1346) - Made drawer column responsive
 * [#1376](https://github.com/GoogleChrome/chromium-dashboard/pull/1376) - Some UI enhancements
 * [#1436](https://github.com/GoogleChrome/chromium-dashboard/pull/1436) - Fixed bug: Star would toggle in UI but not at the backend
+* [#1244](https://github.com/GoogleChrome/chromium-dashboard/pull/1244) - "additional fields by process phase" widget is keyboard accessible
 
 
 **Bold** and _Italic_ and `Code` text
