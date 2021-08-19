@@ -31,13 +31,13 @@ This project aimed at making the following modifications to WebStatus:-
 * [#1467](https://github.com/GoogleChrome/chromium-dashboard/pull/1467) - Added Aria-label attributes
 * [#1468](https://github.com/GoogleChrome/chromium-dashboard/pull/1468) - Added support for infinite scrolling to previous releases
 
-### Related to bug fixing and improving usability
+### Related to fixing bugs and improving usability
 * [#1211](https://github.com/GoogleChrome/chromium-dashboard/pull/1211) - Fixed failing tests in Travis CI
-* [#1220](https://github.com/GoogleChrome/chromium-dashboard/pull/1220), [#1256](https://github.com/GoogleChrome/chromium-dashboard/pull/1256) - Added responsive design to _stack rank_ & _timeline_ view links
-* [#1212](https://github.com/GoogleChrome/chromium-dashboard/pull/1212) - Fixed failing command `npm run coverage`
-* [#1244](https://github.com/GoogleChrome/chromium-dashboard/pull/1244) - Made "additional fields by process phase" widget keyboard accessible
+* [#1220](https://github.com/GoogleChrome/chromium-dashboard/pull/1220), [#1256](https://github.com/GoogleChrome/chromium-dashboard/pull/1256) - Added responsiveness to _stack rank_ & _timeline_ view links
+* [#1212](https://github.com/GoogleChrome/chromium-dashboard/pull/1212) - Generation of coverage report no longer fails
+* [#1244](https://github.com/GoogleChrome/chromium-dashboard/pull/1244) - "additional fields by process phase" widget is keyboard accessible
 * [#1248](https://github.com/GoogleChrome/chromium-dashboard/pull/1248) - Fixed bug: "Edit feature complains about multiple emails"
-* [#1311](https://github.com/GoogleChrome/chromium-dashboard/pull/1311) [#1399](https://github.com/GoogleChrome/chromium-dashboard/pull/1339) [#1383](https://github.com/GoogleChrome/chromium-dashboard/pull/1383) - Updated Developer Documentation with architecture details
+* [#1311](https://github.com/GoogleChrome/chromium-dashboard/pull/1311) [#1399](https://github.com/GoogleChrome/chromium-dashboard/pull/1339) [#1383](https://github.com/GoogleChrome/chromium-dashboard/pull/1383) - Updated Developer Documentation
 * [#1325](https://github.com/GoogleChrome/chromium-dashboard/pull/1325) - Replaced Left Hand Navigation with a dropdown menu 
 * [#1334](https://github.com/GoogleChrome/chromium-dashboard/pull/1334) - Added the dropdown in narrow viewports
 * [#1340](https://github.com/GoogleChrome/chromium-dashboard/pull/1340) - Page title on 'edit feature' page will display the feature name
