@@ -13,6 +13,12 @@ This project aimed at making the following modifications to WebStatus:-
 
 ## Pull Requests Raised
 ### Related to migrating from Python 2 to Python 3
+The Python 3 runtime of App Engine doesn't include bundled services like GAE Users API. Instead, Google Cloud provides standalone products that are equivalent to most of the bundled services in the Python 2 runtime. If no such standalone product is available, the developers are expected to use third-party products or other workarounds. As a part of this project, the following services were migrated:-
+  1. URLFetch to Native Python Requests
+  1. GAE Users to Google Sign-In
+  1. GAE DB Client Library to GAE NDB Library to Cloud NDB Library
+
+The following pull requests were raised:-
 * [#1205](https://github.com/GoogleChrome/chromium-dashboard/pull/1205) - Migrated URLFetch to Native Python Requests 
 * [#1275](https://github.com/GoogleChrome/chromium-dashboard/pull/1275) - Migrated GAE Users to Google Sign-In
 * [#1352](https://github.com/GoogleChrome/chromium-dashboard/pull/1352) - Migrated GAE DB Client Library to GAE NDB Library
