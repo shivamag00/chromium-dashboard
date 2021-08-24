@@ -50,6 +50,8 @@ The following PRs were raised:-
 * [#1468](https://github.com/GoogleChrome/chromium-dashboard/pull/1468) - Added support for infinite scrolling to previous releases
 
 ### Related to fixing bugs and improving usability
+As mentioned, the project also involved fixing bugs and improve usability. The following is the complete list of UI enhancements and bug fixes that were done as a part of this project:-
+
 * [#1211](https://github.com/GoogleChrome/chromium-dashboard/pull/1211) - Fixed failing tests in Travis CI
 * [#1220](https://github.com/GoogleChrome/chromium-dashboard/pull/1220), [#1256](https://github.com/GoogleChrome/chromium-dashboard/pull/1256) - _stack rank_ & _timeline_ links are viewport responsive
 * [#1212](https://github.com/GoogleChrome/chromium-dashboard/pull/1212) - Generation of coverage report no longer fails
@@ -63,5 +65,10 @@ The following PRs were raised:-
 * [#1436](https://github.com/GoogleChrome/chromium-dashboard/pull/1436) - Fixed bug: Star would toggle in UI but not at the backend
 * [#1244](https://github.com/GoogleChrome/chromium-dashboard/pull/1244) - "additional fields by process phase" widget is keyboard accessible
 
+## Project Status
+By the end of GSoC 2021, all the above-mentioned PRs were merged into the main branch and all the goals of the project were met. 
 
-All the above-mentioned PRs were merged into the main branch and all the goals of the project were met. 
+## See Also
+* [Design Doc for Roadmap View](https://docs.google.com/document/d/1qnMsBYzhqVnja_TpZVL8-ENj2pG0tKIRZ_PRnoPxGHk/edit?usp=sharing)
+* [GSoC 2021 End of Program Presentation](https://docs.google.com/presentation/d/1Jx7tUVszkXTSIGp9XPEjLv9nCI2IWH6k0Gg1HLXhPEE/edit?usp=sharing)
+
