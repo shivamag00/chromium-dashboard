@@ -26,6 +26,15 @@ The following pull requests were raised:-
 * [#1365](https://github.com/GoogleChrome/chromium-dashboard/pull/1365) - Migrated GAE NDB to Cloud NDB
 
 ### Related to roadmap view
+WebStatus has a releases page which contains information about the new features that will be added in the next three versions of Chrome. One of the requirements was to upgrade this page so that it could contain information about all versions of Chrome. The other requirements were to make the page API-driven and responsive to viewport size. Therefore, a new page, called 'upcoming', was created. The following was done:-
+  1. To make the page API-driven, two new APIs were created viz, Features API and Channels API.
+  2. Support was added for infinite side-scrolling to the upcoming and past Chrome Versions.
+  3. For each chrome version, features were displayed after grouping them according to the stage in their lifecycle.
+  4. Two new web components were designed which were inspired by Redux.
+  5. Support was added for feature fighlighting on hovering over the feature.
+  6. The web page was designed to be responsive to viewport size.
+
+The following PRs were raised:-
 * [#1399](https://github.com/GoogleChrome/chromium-dashboard/pull/1399) - Added Features API
 * [#1400](https://github.com/GoogleChrome/chromium-dashboard/pull/1400) - Added Channels API
 * [#1424](https://github.com/GoogleChrome/chromium-dashboard/pull/1424) - Added Endpoint in Features API to query only a milestone
