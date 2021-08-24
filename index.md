@@ -68,6 +68,19 @@ As mentioned, the project also involved fixing bugs and improve usability. The f
 ## Project Status
 By the end of GSoC 2021, all the above-mentioned PRs were merged into the main branch and all the goals of the project were met. 
 
+## Learnings
+While working on this project, I got to learn the following:-
+* Use of technologies like 
+   * Web Components using LitElement
+   * Google Cloud Datastore
+   * Google Sign-In
+   * Django Templates and Flask
+* Some good software developmement practices with hands-on experience of following software quality and style guidelines. 
+* Some secure web practices (XSSI Prefix, nonce attribute etc.)
+* Writing Design Docs
+* Writing unit tests
+* Performing code reviews
+
 ## See Also
 * [Design Doc for Roadmap View](https://docs.google.com/document/d/1qnMsBYzhqVnja_TpZVL8-ENj2pG0tKIRZ_PRnoPxGHk/edit?usp=sharing)
 * [GSoC 2021 End of Program Presentation](https://docs.google.com/presentation/d/1Jx7tUVszkXTSIGp9XPEjLv9nCI2IWH6k0Gg1HLXhPEE/edit?usp=sharing)
